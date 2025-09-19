@@ -1,0 +1,91 @@
+:root {
+    --bg: #fafafa;
+    --panel: #fff;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --primary: #007bff;
+    --primary-2: #0056b3;
+    --success: #28a745;
+    --success-2: #1e7e34;
+    --danger: #d9534f;
+    --danger-2: #c9302c;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body,
+#root {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem
+}
+
+.input {
+    width: 100%;
+    padding: .6rem .8rem;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s, opacity .2s, transform .02s;
+}
+
+.btn:active {
+    transform: translateY(1px)
+}
+
+.btn:disabled {
+    background: #cbd5e1;
+    cursor: not-allowed;
+    color: #fff
+}
+
+.btn--primary {
+    background: var(--primary)
+}
+
+.btn--primary:hover {
+    background: var(--primary-2)
+}
+
+.btn--success {
+    background: var(--success)
+}
+
+.btn--success:hover {
+    background: var(--success-2)
+}
+
+.btn--danger {
+    background: var(--danger)
+}
+
+.btn--danger:hover {
+    background: var(--danger-2)
+}

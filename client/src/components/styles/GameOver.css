@@ -1,0 +1,56 @@
+.game-over {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.go-title {
+  font-size: 1.8rem;
+  margin-bottom: .5rem;
+  color: #333
+}
+
+.go-winner {
+  margin-bottom: 1rem;
+  font-size: 1.1rem
+}
+
+.go-table {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem
+}
+
+.go-row {
+  display: grid;
+  grid-template-columns: 40px 1fr 80px;
+  gap: .5rem;
+  padding: .6rem .8rem;
+  border-bottom: 1px solid #f1f5f9;
+  align-items: center
+}
+
+.first {
+  background: #f8fafc;
+  font-weight: 700
+}
+
+.go-name {
+  color: #111827
+}
+
+.go-score {
+  text-align: right;
+  font-variant-numeric: tabular-nums
+}
+
+.go-buttons {
+  display: flex;
+  gap: .8rem;
+  margin-top: .5rem
+}

@@ -1,0 +1,80 @@
+.game-board {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem
+}
+
+.board-players {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  justify-content: center
+}
+
+.board-player {
+  padding: .4rem .8rem;
+  border-radius: 4px;
+  background: #eee;
+  font-size: .95rem
+}
+
+.board-player-me {
+  background: #d0ebff;
+  font-weight: 700
+}
+
+.board-rows {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+  max-width: 700px
+}
+
+.board-row {
+  display: flex;
+  justify-content: center
+}
+
+
+.reveal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: #fff;
+  border: 2px solid #cfe2ff;
+  border-radius: 8px;
+}
+
+.reveal-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.reveal-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.reveal-item {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.reveal-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333
+}
+
+.reveal-card {
+  width: 72px
+}
