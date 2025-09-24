@@ -30,3 +30,23 @@
   color: var(--danger);
   font-weight: 700
 }
+
+.lobby-rules {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.lobby-rules h2 {
+  margin-bottom: 16px;
+}
+
+.lobby-rules ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lobby-rules li {
+  margin: 6px 0;
+}
